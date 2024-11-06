@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kecen's Unique Button</title>
+    <style>
+        /* 页面背景和整体样式 */
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Verdana', sans-serif;
+            color: #333;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2.5rem;
+            color: #4b6587;
+            margin-bottom: 20px;
+        }
+
+        /* 定制按钮样式 */
+        #uniqueButton {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        /* 按钮的交互效果 */
+        #uniqueButton:hover {
+            background-color: #ff4d4d;
+            transform: scale(1.1);
+        }
+        #uniqueButton:active {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kecen's Unique Button</h1>
+    <button id="uniqueButton">Activate</button>
+
+    <script>
+        // 使用自定义命名和箭头函数来处理按钮点击
+        const assignNotifier = () => {
+            const message = "🎉 任务已成功完成！";
+            alert(message);
+        };
+
+        // 添加点击事件监听
+        document.getElementById("uniqueButton").addEventListener("click", assignNotifier);
+    </script>
+
+</body>
+</html>
